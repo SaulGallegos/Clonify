@@ -17,6 +17,7 @@ import {RouterModule} from '@angular/router';
 import { ROUTES } from './app.routes';
 import { NoimagePipe } from './pipes/noimage.pipe';
 import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
+import { DomseguroPipe } from './pipes/domseguro.pipe';
 
 // tslint:disable-next-line:comment-format
 //Services
@@ -30,6 +31,7 @@ import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
     SearchComponent,
     NavbarComponent,
     NoimagePipe,
+    DomseguroPipe,
     TarjetasComponent
   ],
   imports: [

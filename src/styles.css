@@ -15,7 +15,9 @@ a:hover{
     color: honeydew;
     text-decoration: none;
 }
-
+th,tr,td{
+    color: white!important;
+}
 .puntero {
     cursor: pointer;
 }
