@@ -8,6 +8,13 @@ body {
 hr {
     border-color: white;
 }
+a{
+    color: #ffffff;
+}
+a:hover{
+    color: honeydew;
+    text-decoration: none;
+}
 
 .puntero {
     cursor: pointer;
@@ -15,7 +22,7 @@ hr {
 
 .img-circle {
     border-radius: 100%;
-    width: 150px;
+    width: 200px;
 }
 
 .card-title,
