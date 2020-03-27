@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
+import { SpotifyService } from '../../services/spotify.service';
 
 @Component({
   selector: 'app-artista',
@@ -7,9 +8,16 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class ArtistaComponent {
 
-  constructor(private router: ActivatedRoute) {
+  constructor(private router: ActivatedRoute, private spotify: SpotifyService) {
     this.router.params.subscribe(params => {
-      console.log(params['id']);
+      // tslint:disable-next-line:no-string-literal
+      this.getArtista(params['id']);
+    });
+  }
+
+  getArtista(id: string) {
+    this.spotify.getArtista(id).subscribe(artista => {
+      console.log(artista);
     });
   }
 
