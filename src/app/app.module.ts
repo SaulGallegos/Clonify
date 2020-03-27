@@ -1,5 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
+import { HttpClientModule} from '@angular/common/http';
+
 // tslint:disable-next-line:comment-format
 //Componentes
 import { AppComponent } from './app.component';
@@ -24,6 +27,7 @@ import { ROUTES } from './app.routes';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot(ROUTES, { useHash: true })
   ],
   providers: [],
