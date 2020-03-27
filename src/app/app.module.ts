@@ -16,6 +16,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {RouterModule} from '@angular/router';
 import { ROUTES } from './app.routes';
 import { NoimagePipe } from './pipes/noimage.pipe';
+import { TarjetasComponent } from './components/tarjetas/tarjetas.component';
 
 // tslint:disable-next-line:comment-format
 //Services
@@ -28,7 +29,8 @@ import { NoimagePipe } from './pipes/noimage.pipe';
     ArtistaComponent,
     SearchComponent,
     NavbarComponent,
-    NoimagePipe
+    NoimagePipe,
+    TarjetasComponent
   ],
   imports: [
     BrowserModule,
