@@ -19,7 +19,7 @@ export class SpotifyService {
     return this.http.get('https://api.spotify.com/v1/browse/new-releases?limit=20', { headers});
   }
 
-  getArtista(termino: string){
+  getArtista(termino: string) {
     const headers = new HttpHeaders({
     // tslint:disable-next-line:object-literal-key-quotes
     'Authorization': 'Bearer BQBV1eGGDrjt2hOD3jcdUBBWE-Ne4fZ5QY1ugSO2uqnhUwQAjdzbFsPsdgZK50vD0Q2R_tn-g8KIVg73g_c'
