@@ -16,6 +16,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {RouterModule} from '@angular/router';
 import { ROUTES } from './app.routes';
 
+// tslint:disable-next-line:comment-format
+//Services
+
 
 @NgModule({
   declarations: [
