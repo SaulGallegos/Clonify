@@ -16,10 +16,16 @@ export class SpotifyService {
       'Authorization': 'Bearer BQBV1eGGDrjt2hOD3jcdUBBWE-Ne4fZ5QY1ugSO2uqnhUwQAjdzbFsPsdgZK50vD0Q2R_tn-g8KIVg73g_c'
     });
 
-    this.http.get('https://api.spotify.com/v1/browse/new-releases?limit=20', { headers})
-      .subscribe(data => {
-        console.log(data);
-      });
+    return this.http.get('https://api.spotify.com/v1/browse/new-releases?limit=20', { headers});
+  }
+
+  getArtista(termino: string){
+    const headers = new HttpHeaders({
+    // tslint:disable-next-line:object-literal-key-quotes
+    'Authorization': 'Bearer BQBV1eGGDrjt2hOD3jcdUBBWE-Ne4fZ5QY1ugSO2uqnhUwQAjdzbFsPsdgZK50vD0Q2R_tn-g8KIVg73g_c'
+    });
+
+    return this.http.get(`https://api.spotify.com/v1/search?q=${termino}&type=artist&limit=15`, { headers});
   }
 
 }
