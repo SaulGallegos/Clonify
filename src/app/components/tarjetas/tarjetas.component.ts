@@ -11,7 +11,6 @@ export class TarjetasComponent {
   @Input() items: any[] = [];
 
   constructor(private router: Router) { }
-
   verArtista(item: any) {
     let artistaID;
     if (item.type === 'artist') {
@@ -21,5 +20,4 @@ export class TarjetasComponent {
     }
     this.router.navigate(['/artist', artistaID]);
   }
-
 }
