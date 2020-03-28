@@ -30,6 +30,7 @@ export class ArtistaComponent {
     this.spotify.getTopTracks(id)
       .subscribe(topTracks => {
         this.topTracks = topTracks;
+        console.log(topTracks);
       });
   }
 }
